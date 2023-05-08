@@ -14,7 +14,7 @@ class Food:
         self.name = name
         self.price = price
         
-class PizzaStore(self):
+class PizzaStore(DeliveryStore):
     def __init__(self):
         menu_names = ["Cheese", "Potato", "Shrimp", "Pineapple", "Meatball"]
         menu_prices = [11100, 12600, 13300, 21000, 19500];
