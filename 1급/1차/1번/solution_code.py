@@ -24,11 +24,11 @@ class PizzaStore(DeliveryStore):
         
         self.order_list = []
     
-    def set_total_price(order_list):
+    def set_total_price(self, order_list):
         for order in order_list:
             self.order_list.append(order)
 
-    def get_total_price():
+    def get_total_price(self):
         total_price = 0
         for order in self.order_list:
             for menu in self.menu_list:
