@@ -1,11 +1,10 @@
+# <undefined>
+# import <undefined>
+
 def solution(num):
-    answer = 0
-    
-    while(true):
-      num = num + 1
-      if '0' in num:
-        continue
-      else:
-        break
-    
-    return answer
+    num += 1
+    digit = 1
+    while num // digit % 10 == 0:
+        num += digit
+        digit *= 10
+    return num
