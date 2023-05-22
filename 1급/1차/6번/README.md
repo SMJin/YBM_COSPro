@@ -1,15 +1,15 @@
 # 문제6
-체스에서 나이트(knight)는 아래 그림과 같이 동그라미로 표시된 8개의 방향중 한 곳으로 한 번에 이동이 가능합니다.
+##### 체스에서 나이트(knight)는 아래 그림과 같이 동그라미로 표시된 8개의 방향중 한 곳으로 한 번에 이동이 가능합니다.
 
 ![image](https://s3.ap-northeast-2.amazonaws.com/grepp-cloudfront/programmers_imgs/challengeable-imgs/20180315_knight.png)
 
-단, 나이트는 체스판 밖으로는 이동할 수 없습니다.
+##### 단, 나이트는 체스판 밖으로는 이동할 수 없습니다.
 
-체스판의 각 칸의 위치는 다음과 같이 표기합니다.
+##### 체스판의 각 칸의 위치는 다음과 같이 표기합니다.
 ![image](https://s3.ap-northeast-2.amazonaws.com/grepp-cloudfront/programmers_imgs/challengeable-imgs/20180315_knight2.png)
-예를 들어, A번줄과 1번줄이 겹치는 부분은 'A1'이라고 합니다.
+##### 예를 들어, A번줄과 1번줄이 겹치는 부분은 'A1'이라고 합니다.
 
-나이트의 위치 pos가 매개변수로 주어질 때, 나이트를 한 번 움직여서 이동할 수 있는 칸은 몇개인지 return 하도록 solution 함수를 완성해주세요.
+##### 나이트의 위치 pos가 매개변수로 주어질 때, 나이트를 한 번 움직여서 이동할 수 있는 칸은 몇개인지 return 하도록 solution 함수를 완성해주세요.
 
 ---
 
