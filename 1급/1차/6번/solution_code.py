@@ -1,41 +1,19 @@
 def solution(pos):
     answer = 0
     
-    list_ = [[1,1,1,1], [1,1,1,1]]
-    x = ord(pos[0]) - ord('A')
-    y = int(pos[1]) -1
+    # 현재 위치값을 기준으로 이동할 수 있는 곳의 좌표의 방향을 기록한다
+    direction_x = [-2, -2, -1, -1, 1, 1, 2, 2]
+    direction_y = [1, -1, 2, -2, 2, -2, 1, -1]
     
-    if x-2 < 0:
-      list_[0,0] = 0
-      list_[1,0] = 0
-      if x-1 < 0:
-        list_[0,1] = 0
-        list_[1,1] = 0
+    # 좌표는 0~7 로 설정한다.
+    x = ord(pos[0]) - ord("A")
+    y = ord(pos[1]) - ord("0") -1
     
-    if x+2 > 7:
-      list_[0,3] = 0
-      list_[1,3] = 0
-      if x+1 > 7:
-        list_[0,2] = 0
-        list_[1,2] = 0
-    
-    if y-2 < 0:
-      list_[1,1] = 0
-      list_[1,2] = 0
-      if y-1 < 0:
-        list_[1,0] = 0
-        list_[1,3] = 0
+    for i in range(8):
+        go_x = x + direction_x[i]
+        go_y = y + direction_y[i]
         
-    if y+2 > 7:
-      list_[0,1] = 0
-      list_[0,2] = 0
-      if y+1 > 7:
-        list_[0,0] = 0
-        list_[0,3] = 0
-    
-    for i in list_:
-      for j in i:
-        if j == 1:
-          answer = answer + 1
+        if go_x > -1 && go_x < 8 && go_y > -1 && go_y < 8:
+            answer = answer + 1
        
     return answer
